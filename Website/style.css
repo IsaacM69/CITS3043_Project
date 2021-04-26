@@ -97,5 +97,37 @@ h1{
     margin-right: 30%;
 }
 
+.tabs button
+{
+
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 3% 5%;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tabs button:hover
+{
+    background-color: #aaa;
+}
+
+.tabs button:active
+{
+    background-color: beige;
+}
+
+.tab_content
+{
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    margin-left: 400px;
+    margin-right: 400px;
+}
 /* BODY ^^ */
 /* HOMEPAGE ^^^ */
