@@ -13,7 +13,6 @@
 
 h1{
 
-    clear: both;
     font-size:xx-large;
     text-align: center;
     /*margin-top: 2.5%;*/
@@ -25,28 +24,38 @@ h1{
     background-color: gainsboro;
 }
 
+.bigHead
+{
+    background-color: gainsboro;   
+}
 .logo_img
 {
+
     display: block;
     border-radius: 50%;
     width: 10%;
-    height: auto;
+    height: 10%;
 }
 
 .logo_container
 {
-    
-    margin-left: 80%;
+    margin-left: 90%;
     position: relative;
-    width: 50%;
+    width: 100%;
 }
 .logo_container:hover .logo_overlay
 {
     opacity: 1;
 }
 
+.under_logo
+{
+    /*margin-left: 90%;*/
+
+}
 .logo_overlay
 {
+
     position: absolute;
     top: 0;
     bottom: 0;
@@ -61,6 +70,7 @@ h1{
 
 .logo_text
 {
+
     color: white;
     font-size: 25px;
     position: absolute;
