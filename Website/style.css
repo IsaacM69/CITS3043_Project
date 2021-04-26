@@ -13,7 +13,7 @@
 
 h1{
 
-    font-size:xx-large;
+    float: left;
     text-align: center;
     /*margin-top: 2.5%;*/
     padding-left: 30%;
@@ -27,6 +27,7 @@ h1{
 .bigHead
 {
     background-color: gainsboro;   
+    margin-right: 0;
 }
 .logo_img
 {
@@ -39,8 +40,8 @@ h1{
 
 .logo_container
 {
-    margin-left: 90%;
-    position: relative;
+    margin-left: 85%;
+    position: absolute;
     width: 100%;
 }
 .logo_container:hover .logo_overlay
@@ -50,8 +51,7 @@ h1{
 
 .under_logo
 {
-    /*margin-left: 90%;*/
-
+    display: inline;
 }
 .logo_overlay
 {
