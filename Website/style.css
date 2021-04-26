@@ -3,6 +3,7 @@
     
 }
 
+/* HOMEPAGE VVV */
 #homepage
 {
 
@@ -10,6 +11,9 @@
     background-color: aliceblue;
 
 }
+
+
+/* HEADERR vvv */
 
 h1{
 
@@ -79,3 +83,19 @@ h1{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%) ;
 }
+
+/* HEADER ^^^^ */
+/* BODY vv */
+.tabs
+{
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: gainsboro;
+    margin-top: 2.5%px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+/* BODY ^^ */
+/* HOMEPAGE ^^^ */
