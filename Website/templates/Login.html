@@ -9,11 +9,26 @@
     <input type="text" id="email" name="email" value = "{{ request.form.email }}"> <br>
 
     <label  for="pass">Password:</label><br>
-    <input type="text" id="pass" name="pass"value = "{{ request.form.pass }}"><br>
+    <input type="password" id="pass" name="pass"value = "{{ request.form.pass }}"><br>
+    <input type="checkbox" onclick="myFunction()">Show password<br>
 
-    <input type = "submit" value ="login">
+    <input type = "submit" value ="Login">
+    <input type = "button" value ="Create Account"  onclick = myFunction2()>
 </form>
 
+<script>
+    function myFunction2() {
+        window.location.href="CreateAccount"
+    }
+    function myFunction() {
+      var x = document.getElementById("pass");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+</script>
 {% if error %}
 <p class="incorrect email or password"> Error: {{ error }}
 {% endif %}

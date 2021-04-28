@@ -10,6 +10,10 @@ def home():
 def Homepage():
     return render_template('Homepage.html')
 
+@app.route('/CreateAccount')
+def CreateAccount():
+    return render_template('CreateAccount.html')
+
 @app.route('/', methods=['GET', 'POST'])
 def login():
     
