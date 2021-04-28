@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<body id = "loginform">
+<form action ="" method="post">
+    <h3>Please Login</h3>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email" value = "{{ request.form.email }}"> <br>
+
+    <label  for="pass">Password:</label><br>
+    <input type="text" id="pass" name="pass"value = "{{ request.form.pass }}"><br>
+
+    <input type = "submit" value ="login">
+</form>
+
+{% if error %}
+<p class="incorrect email or password"> Error: {{ error }}
+{% endif %}
+
+</body>
