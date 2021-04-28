@@ -1,0 +1,1 @@
+type python3 app.py into terminal while in website to watch the magic happen
