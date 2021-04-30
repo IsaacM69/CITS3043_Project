@@ -116,6 +116,12 @@ h1{
     border-color: black;
 }
 
+.m1_head
+{
+    font-size: x-large;
+    font-weight: bold;
+}
+
 /* Footer */
 
 .footer
