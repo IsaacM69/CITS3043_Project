@@ -87,7 +87,6 @@ h1{
 
 .no
 {
-    text-align: center;
     background-color: whitesmoke;
     border-style: solid;
     border-color: black;
@@ -95,6 +94,7 @@ h1{
 
 .m1_head
 {
+    text-align: center;
     font-size: x-large;
     font-weight: bold;
 }
@@ -102,9 +102,24 @@ h1{
 
 .title_image
 {
-   
-    height: 20%;
-    width: 20%;
+    text-align: center;
+    height: max-content;
+     width: auto;
+}
+
+.info
+{
+    margin-top: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
+    /* background-color: black; */
+    text-align: left;
+}
+
+.sub_head
+{
+    font-weight: bold;
+    font-size: larger;
 }
 /* Footer */
 
