@@ -121,6 +121,24 @@ h1{
     background-color: rgb(235, 235, 235);
 }
 
+#tab3 button
+{
+    background-color: rgb(187, 185, 185) ;
+    padding: 5px;
+    margin: 10px;
+    border-width: 1px;
+    border-radius: 1%;
+    border-color: grey;
+    border-style: solid;
+    transition-duration: 0.3s;
+
+}
+
+#tab3 button:hover
+{
+    background-color: rgb(235, 235, 235);
+}
+
 .courses_content
 {
     text-align: center;

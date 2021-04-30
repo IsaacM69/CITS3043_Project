@@ -29,12 +29,12 @@
 
 
 <!-- Menu system, can always change this  -->
-
-<div class="tabs">
+<body onload="openTab(event, 'tab1')"></body>
+<div class="tabs" >
     <button class="tab_links" onclick="openTab(event, 'tab1')">Home</button>
     <button class="tab_links" onclick="openTab(event, 'tab2')">Courses</button>
-    <button class="tab_links" onclick="openTab(event, 'tab3')">Marks</button>
-    <button class="tab_links" onclick="openTab(event, 'tab4')">tab4</button>
+    <button class="tab_links" onclick="openTab(event, 'tab3')">Tests</button>
+    <button class="tab_links" onclick="openTab(event, 'tab4')">Marks</button>
     <button class="tab_links" onclick="openTab(event, 'tab5')">tab5</button>
     <button class="tab_links" onclick="openTab(event, 'tab6')">tab6</button>
 
@@ -66,15 +66,25 @@
                 </button>
                 
             </div>
-            
-
-            
         </p1>
     </div>
 
     <div id=tab3 class=tab_content>
         <p1>
-            Yep, thats a 0%, sorry bud
+            <div class="courses_content" >
+                <button onclick="window.location.href='Module_1.html';">
+                    Test 1: Simple, dont crash
+                </button>
+                <button onclick="window.location.href='Module_1.html';">
+                    Test 2: get insurance info
+                </button>
+                <button onclick="window.location.href='Module_1.html';">
+                    Test 3: when should i hit and run?
+                </button>
+                <button onclick="window.location.href='Module_1.html';">
+                    Final Test
+                </button>
+            </div>
         </p1>
     </div>
 

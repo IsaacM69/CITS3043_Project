@@ -12,3 +12,34 @@ function openTab(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+  document.onkeypress = (e) =>
+  {
+    if (e.key == '1')
+    {
+        openTab(event, 'tab1')
+    }
+    if (e.key == '2')
+    {
+        openTab(event, 'tab2')
+    }
+    if (e.key == '3')
+    {
+        openTab(event, 'tab3')
+
+    }
+    if (e.key == '4')
+    {
+        openTab(event, 'tab4')
+    }
+    if (e.key == '5')
+    {
+        openTab(event, 'tab5')
+    }
+    if (e.key == '6')
+    {
+        openTab(event, 'tab6')
+
+    }
+
+  }
