@@ -4,7 +4,7 @@
 }
 
 /* HOMEPAGE VVV */
-#homepage
+#format_text
 {
 
     font-family: Arial, Helvetica, sans-serif;
@@ -12,17 +12,6 @@
 
 }
 
-.acc_button
-{
-    text-align: left;
-    display: inline-block;
- 
-    /* padding-top: 50%;
-    padding-bottom: 50%;
-    padding-left: 45%;
-    padding-right: 45%;
-    border-radius: 50%; */
-}
 
 
 /* HEADERR vvv */
@@ -31,7 +20,6 @@ h1{
 
     float: left;
     text-align: center;
-    /*margin-top: 2.5%;*/
     padding-left: 40%;
     padding-right: 40%;
     padding-top: 3%;
@@ -67,45 +55,9 @@ h1{
     position: absolute;
     width: 100%;
 }
-.logo_container:hover .logo_overlay
-{
-    opacity: 1;
-}
-
-.under_logo
-{
-    display: inline;
-}
-.logo_overlay
-{
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 10%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: gainsboro;
-}
-
-.logo_text
-{
-    text-align: left;
-    color: white;
-    font-size: 20px;
-    position:absolute;
-    top: 50%;
-    left: 25%;
-
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%) ;
-}
 
 /* HEADER ^^^^ */
-/* BODY vv */
+/* HOMEPAGE - BODY vv */
 .tabs
 {
     text-align: center;
@@ -178,5 +130,4 @@ h1{
 {
     text-align: center;
 }
-/* BODY ^^ */
-/* HOMEPAGE ^^^ */
+/* HOMEPAGE - BODY ^^ */
