@@ -130,5 +130,23 @@ h1{
     margin-right: 0;
     text-align: left;
 }
+
+#tab2 button
+{
+    background-color: red;
+    padding: 5px;
+    margin: 10px;
+    border-width: 3px;
+    border-radius: 5%;
+    border-color: black;
+    border-style: solid;
+    transition-duration: 0.3s;
+
+}
+
+#tab2 button:hover
+{
+    background-color: blue;
+}
 /* BODY ^^ */
 /* HOMEPAGE ^^^ */
