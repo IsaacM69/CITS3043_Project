@@ -52,3 +52,27 @@ h1{
 }
 
 /* HEADER ^^^^ */
+
+/* BODY */
+
+.module_head
+{
+    font-size: xx-large;
+    font-weight: bold;
+    padding-bottom: 1%;
+}
+
+.module_body
+{
+
+
+    margin-top: 15%;
+    text-align: center;
+
+    background-color: white;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 4px;
+}
