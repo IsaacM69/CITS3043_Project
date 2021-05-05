@@ -28,5 +28,10 @@ def login():
             return redirect(url_for('Homepage'))
     return render_template('Login.html', error = error)
 
+
+@app.route('/Acc')
+def Account():
+    return render_template('Account.html')
+
 if __name__=='__main__':
     app.run(debug=True)
