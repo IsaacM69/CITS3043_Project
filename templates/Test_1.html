@@ -55,15 +55,21 @@
             Should you drive below the speed limit?
         </div>
 
-        <div class="answers">
+        <form class="answers">
+            <div class="answer">
+                <input type="radio" id="yes" name="q1" value="yes" style="cursor: pointer;">
+                <label for="yes" style="cursor: pointer;" >Yes</label>
+            </div>
+            
+            <div class="answer">
+                <input type="radio" id="no" name="q1" value="no" style="cursor: pointer;" >
+                <label for="no" style="cursor: pointer;" >No</label>
+            </div>
+            
 
-            <input type="radio">
-            Yes
-            <br>
-            <input type="radio">
-            No
-
-        </div>
+            <input type="submit" value="Next >" class="button">
+            
+        </form>
         
         
     </div>
@@ -72,9 +78,6 @@
     <br>
 
 
-    <button class="button", onclick="window.location='Test_1.html';" >
-        <span>Next</span>
-    </button>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
