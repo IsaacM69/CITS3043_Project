@@ -29,9 +29,14 @@ def login():
     return render_template('Login.html', error = error)
 
 
-@app.route('/Acc')
-def Account():
-    return render_template('Account.html')
+@app.route('/Module_1')
+def Module_1():
+    return render_template('Module_1.html')
+
+
+@app.route('/Test_1')
+def Test_1():
+    return render_template('Test_1.html')
 
 if __name__=='__main__':
     app.run(debug=True)

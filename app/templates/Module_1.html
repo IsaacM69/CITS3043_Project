@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html id=format_text>
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="module_style.css">
-<script src="java.js"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='css/module_style.css')}}">
+<script src="{{url_for('static', filename='java/java.js')}}"></script>
 
 
 
@@ -42,7 +42,7 @@
 
     <br>
     <div class="title_image">
-        <img src="img/inside1.jpg" alt="inside car image">
+        <img src="{{url_for('static', filename='img/inside1.jpg')}}" alt="inside car image">
 
     </div>
 
@@ -117,7 +117,7 @@
     <br>
 
 
-    <button class="button", onclick="window.location='Test_1.html';" >
+    <button class="button", onclick="window.location='Test_1';" >
         <span>Take the test!</span>
     </button>
 
