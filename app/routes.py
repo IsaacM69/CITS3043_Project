@@ -6,15 +6,25 @@ app = Flask(__name__)
 def home():
     return "Sup pussys" 
 
-@app.route('/Homepage')
+@app.route('/')
 def Homepage():
     return render_template('Homepage.html')
 
-@app.route('/CreateAccount')
+@app.route('/CreateAccount', methods=['GET', 'POST'])
 def CreateAccount():
-    return render_template('CreateAccount.html')
 
-@app.route('/', methods=['GET', 'POST'])
+    error = None
+    if request.method =='POST':
+
+        if request.form['password'] != request.form['Cpass']:
+            error = "Password don't match!"
+
+        else:
+
+            return redirect(url_for('Homepage'))
+    return render_template('CreateAccount.html', error = error)
+
+@app.route('/Login', methods=['GET', 'POST'])
 def login():
     
     error = None
