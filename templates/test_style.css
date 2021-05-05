@@ -85,14 +85,14 @@ h1{
 }
 
 
-.no
+.main
 {
     background-color: whitesmoke;
     border-style: solid;
     border-color: black;
 }
 
-.m1_head
+.t_head
 {
     text-align: center;
     font-size: x-large;
@@ -107,48 +107,73 @@ h1{
      width: auto;
 }
 
-.info
+.test_space
 {
     margin-top: 1%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 35%;
+    margin-right: 35%;
     /* background-color: black; */
     text-align: left;
 }
 
-.sub_head
+.question_number
 {
     font-weight: bold;
     font-size: larger;
 }
 
-.test_button
+.question
 {
-    justify-self: center;
-    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.answers
+{
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+.answer
+{
+    background-color: gainsboro;
+    padding: 1%;
+    transition-duration: 500ms;
+    margin-bottom: 1%;
+}
+
+.answer:hover
+{
+    background-color: rgb(202, 201, 201);
     padding: 1%;
 }
 
 
+/* next button */
 .button
 {
     display: inline-block;
     border-radius: 4px;
-    background-color: #333;
+    background-color: rgb(150, 150, 150);
     border: none;
     color: #FFFFFF;
     text-align: center;
     font-size: 20px;
-    padding: 20px;
-    width: 200px;
+    padding: 10px;
+    width: 100px;
     transition: all 0.5s;
     cursor: pointer;
     margin-right: 40%;
     margin-left: 40%;
     text-decoration: none;
 
- }
-  
+}
+
+.button:hover
+{
+    background-color:rgb(120, 120, 120);;
+}
 .button span
 {
     cursor: pointer;
