@@ -44,8 +44,12 @@ def Module_1():
     return render_template('Module_1.html')
 
 
-@app.route('/Test_1')
+@app.route('/Test_1', methods=['GET', 'POST'])
 def Test_1():
+    error = None
+    if request.method == 'POST':
+        mark = request.form['final_mark']
+        print (mark)
     return render_template('Test_1.html')
 
 if __name__=='__main__':
