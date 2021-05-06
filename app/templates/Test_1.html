@@ -55,17 +55,19 @@
             Should you drive below the speed limit?
         </div>
 
-        <form class="answers" id="a1">
+        <form class="answers" id="a1" method="POST">
             <div class="answer">
-                <input type="radio" name="q1" value="yes" style="cursor: pointer;">
+                <input type="radio" name="q1" id="q1" value="yes" style="cursor: pointer;">
                 <label for="yes" style="cursor: pointer;" >Yes</label>
             </div>
             
             <div class="answer" >
-                <input type="radio" name="q1" value="no" style="cursor: pointer;" >
+                <input type="radio" name="q1" id="q1"  value="no" style="cursor: pointer;" >
                 <label for="no" style="cursor: pointer;" >No</label>
             </div>
             <br>
+
+            <input type=submit value=Submit>
 
             <!-- <input type="submit" value="Next >" class="button"> -->
         </form>
@@ -79,19 +81,20 @@
             Should you let faster traffic pass you?
         </div>
 
-        <form class="answers" id="a2">
+        <form class="answers" id="a2" method="POST">
             <div class="answer">
-                <input type="radio" name="q2" value="yes" style="cursor: pointer;">
+                <input type="radio" name="q2" id="q2" value="yes" style="cursor: pointer;">
                 <label for="yes" style="cursor: pointer;" >Yes</label>
             </div>
             
             <div class="answer">
-                <input type="radio" name="q2" value="no" style="cursor: pointer;" >
+                <input type="radio" name="q2" id="q2" value="no" style="cursor: pointer;" >
                 <label for="no" style="cursor: pointer;" >No</label>
             </div>
             <br>
 
             
+            <input type=submit value=Submit>
 
             <!-- <input type="submit" value="Next >" class="button"> -->
         </form>
@@ -183,7 +186,7 @@
         
         Please enter final marks below
         <form method="POST">
-            <input type="text" id="final_mark" name="final_mark" value = "{{ request.form.final_mark }}"> <br>
+            <input type="text" id="final_mark" name="final_mark" value = ""> <br>
         </form>
 
        

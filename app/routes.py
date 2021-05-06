@@ -48,8 +48,13 @@ def Module_1():
 def Test_1():
     error = None
     if request.method == 'POST':
-        mark = request.form['final_mark']
-        print (mark)
+        question1 = request.form['q1']
+        print("q1: ", question1)
+
+        question2 = request.form['q2']
+        print("q2: ", question2)
+
+    
     return render_template('Test_1.html')
 
 if __name__=='__main__':
