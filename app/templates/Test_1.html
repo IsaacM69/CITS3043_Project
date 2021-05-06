@@ -46,7 +46,7 @@
 
     </div>
 
-    <div class="test_space">
+    <div class="test_space" id="test">
         <div class="question_number">
             Question 1 of 5:
         </div>
@@ -54,22 +54,22 @@
             Should you drive below the speed limit?
         </div>
 
-        <form class="answers">
+        <form class="answers" id="a1">
             <div class="answer">
-                <input type="radio" id="yes" name="q1" value="yes" style="cursor: pointer;">
+                <input type="radio" name="q1" value="yes" style="cursor: pointer;">
                 <label for="yes" style="cursor: pointer;" >Yes</label>
             </div>
             
-            <div class="answer">
-                <input type="radio" id="no" name="q1" value="no" style="cursor: pointer;" >
+            <div class="answer" >
+                <input type="radio" name="q1" value="no" style="cursor: pointer;" >
                 <label for="no" style="cursor: pointer;" >No</label>
             </div>
             <br>
 
-            
-
             <!-- <input type="submit" value="Next >" class="button"> -->
         </form>
+
+        
 
         <div class="question_number">
             Question 2 of 5:
@@ -78,14 +78,14 @@
             Should you let faster traffic pass you?
         </div>
 
-        <form class="answers">
+        <form class="answers" id="a2">
             <div class="answer">
-                <input type="radio" id="yes" name="q2" value="yes" style="cursor: pointer;">
+                <input type="radio" name="q2" value="yes" style="cursor: pointer;">
                 <label for="yes" style="cursor: pointer;" >Yes</label>
             </div>
             
             <div class="answer">
-                <input type="radio" id="no" name="q2" value="no" style="cursor: pointer;" >
+                <input type="radio" name="q2" value="no" style="cursor: pointer;" >
                 <label for="no" style="cursor: pointer;" >No</label>
             </div>
             <br>
@@ -102,14 +102,14 @@
             Is wearing a seatbelt bad?
         </div>
 
-        <form class="answers">
+        <form class="answers" id="a3">
             <div class="answer">
-                <input type="radio" id="yes" name="q3" value="yes" style="cursor: pointer;">
+                <input type="radio" name="q3" value="yes" style="cursor: pointer;">
                 <label for="yes" style="cursor: pointer;" >Yes</label>
             </div>
             
             <div class="answer">
-                <input type="radio" id="no" name="q3" value="no" style="cursor: pointer;" >
+                <input type="radio"  name="q3" value="no" style="cursor: pointer;" >
                 <label for="no" style="cursor: pointer;" >No</label>
             </div>
             <br>
@@ -126,14 +126,14 @@
             How far should i drive behind cars?
         </div>
 
-        <form class="answers">
+        <form class="answers" id="a4">
             <div class="answer">
-                <input type="radio" id="1s" name="q4" value="1s" style="cursor: pointer;">
+                <input type="radio"  name="q4" value="1s" style="cursor: pointer;">
                 <label for="yes" style="cursor: pointer;" >1s</label>
             </div>
             
             <div class="answer">
-                <input type="radio" id="2s" name="q4" value="2s" style="cursor: pointer;" >
+                <input type="radio"  name="q4" value="2s" style="cursor: pointer;" >
                 <label for="no" style="cursor: pointer;" >2s</label>
             </div>
             <br>
@@ -150,14 +150,14 @@
             Is it safe if text whilst driving?
         </div>
 
-        <form class="answers">
+        <form class="answers" id="a5">
             <div class="answer">
-                <input type="radio" id="yes" name="q5" value="yes" style="cursor: pointer;">
+                <input type="radio"  name="q5" value="yes" style="cursor: pointer;">
                 <label for="yes" style="cursor: pointer;" >Yes</label>
             </div>
             
             <div class="answer">
-                <input type="radio" id="no" name="q5" value="no" style="cursor: pointer;" >
+                <input type="radio"  name="q5" value="no" style="cursor: pointer;" >
                 <label for="no" style="cursor: pointer;" >No</label>
             </div>
             <br>
@@ -166,9 +166,30 @@
 
             
         </form>
-        <input type="submit" value="Ceck!" class="button">
+        <button class="button", onclick="check_marks()" style="margin-left: 15%;" >
+            <span>Check!</span>
+        </button>
+
+        <!-- <input type="button" id="btn" value="Ceck!" class="button" onclick="check_marks()"> -->
         
     </div>
+
+    <div class="marks" style="display: none;" id="marks">
+        <span id="points"></span>
+        <br>
+        <br>
+        <br>
+        
+       
+        <button class="button", onclick="window.location='Module_1';" >
+            <span>Next Module</span>
+        </button>
+        <button class="button", onclick="window.location='Test_1';" >
+            <span>Try again</span>
+        </button>       
+
+    </div>
+
     <br>
     <br>
     <br>
