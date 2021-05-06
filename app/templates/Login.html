@@ -1,9 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html id=format_text>
+  <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"><body id = "loginform">
-<form action ="" method="post">
-    <h3>Please Login</h3>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <script src="{{url_for('static', filename='java/homepage_script.js')}}"></script>
+  </head>
+
+    <div class="navbar">
+      <a href="/">Home</a>
+      <a href="Module_1">Modules</a>
+      <a href="/Login" style="float: right;">Log In</a>
+      <a href="/CreateAccount" style="float: right;">Register</a>
+    
+    </div>
+<div class="loginHead">
+  <h1>Account Login</h1>
+</div>
+<body>
+<form action ="" method="post" id = loginform>
     <label for="email">Email:</label><br>
     <input type="text" id="email" name="email" value = "{{ request.form.email }}"> <br>
 
@@ -14,7 +28,6 @@
     <input type = "submit" value ="Login">
     <input type = "button" value ="Create Account"  onclick = myFunction2()>
 </form>
-
 <script>
     function myFunction2() {
         window.location.href="CreateAccount"
@@ -33,3 +46,4 @@
 {% endif %}
 
 </body>
+</html>
