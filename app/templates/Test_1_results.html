@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html id=format_text>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='css/test_style.css')}}">
+<script src="{{url_for('static', filename='java/java.js')}}"></script>
+
+
+<!-- navbar -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="Module_1">Module 1</a>
+    <a href="Module_2">Module 2</a>
+    <a href="Module_3">Module 3</a>
+
+    <a href="Login" style="float: right;">Log In</a>
+    <a href="CreateAccount" style="float: right;">Register</a>
+
+</div>
+
+
+<!-- HEADER, probably gonna be on every page -->
+<div class="bigHead">
+    <h1>  Car Class Conserving and Accident Avoidance 
+        <br/>
+    </h1>
+    
+    
+</div>
+
+<br>
+<body>
+<div class="yup">
+.
+<br/>
+</div>
+
+
+<div class="main">
+    <div class="t_head">
+        Test 1: Results
+    </div>
+
+    <br>
+    <div class="title_image">
+        <img src="{{url_for('static', filename='img/inside1.jpg')}}" alt="inside car image">
+
+    </div>
+
+    <div class="test_space" id="test">
+        
+            {% for i in a %}
+                <div class="result_question">
+                    {{i[0]}}
+                </div>
+                <div class="result_answer">
+                    {{i[1]}} <br>
+
+                </div>
+            {% endfor %}
+            <br><br>
+            <div class="total_mark">
+                Total: {{c}} / 3
+            </div>
+    </div>
+    <br>
+    <br>
+
+    <a href="Test_1" class = "button">Next Module</a>
+    <br>
+    <br>
+    <br>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+
+<!-- Footer -->
+<div class="footer">
+    <p>
+        foooter  - this is only here for style, might add some quick links there later or something
+    </p>
+</div>
+
+</html>

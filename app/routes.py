@@ -7,25 +7,24 @@ app = Flask(__name__)
 #sets all the questions for test1
 test1_data = {
     "When is it ok to text in your car?" : {
-        "While driving" : False,
-        "Engine off, parked in a safe place" : True,
-        "At a red light" : False
+        "While driving" : "Incorrect",
+        "Engine off, parked in a safe place" : "Correct",
+        "At a red light" : "Incorrect"
     },
     "How close is considered tailgating?" : {
-        "Less than 2s" : True,
-        "Less than 3s" : False,
-        "Less than 4s" : False
+        "Less than 2s" : "Correct",
+        "Less than 3s" : "Incorrect",
+        "Less than 4s" : "Incorrect"
 
     },
     "How old should a child be before sitting infront of the front passenger airbag?" : {
-            "At least 4" : False,
-            "At least 6" : False,
-            "At least 7" : True
+            "At least 4" : "Incorrect",
+            "At least 6" : "Incorrect",
+            "At least 7" : "Correct"
     }
 }
 test1_original_questions = test1_data
 test1_questions = copy.deepcopy(test1_original_questions)
-test1_answers = []
 def sampling(q, n=2):
     return random.sample(list(q.keys()), n)
 
@@ -94,8 +93,9 @@ def Test_1():
     test1_questions_shuffled = test1_questions
     return render_template('Test_1.html', q = test1_questions_shuffled, o = test1_questions)
 
-@app.route('/quiz', methods=['POST'])
+@app.route('/Test_1_Results', methods=['POST'])
 def quiz_answers():
+    test1_answers = []
     result = "<ol>"
     correct = 0
     for i in test1_questions.keys():
@@ -104,17 +104,19 @@ def quiz_answers():
             if test1_original_questions[i][answered]:
                 result += "<li><u>{}</u></li>{} <b>{}</b>".format(i, answered, translate()(test1_original_questions[i][answered]))
                 print("question ", i, ": ", test1_original_questions[i][answered])
-                test1_answers.append(test1_original_questions[i][answered])
-                correct = correct+1
+                test1_answers.append([i, test1_original_questions[i][answered]])
+                if test1_original_questions[i][answered] == "Correct":
+                    correct +=1
             else:
                 result += "<li><u>{}</u></li>{} <b>{}</b>".format(i, answered, translate()(test1_original_questions[i][answered]))
                 print("question ", i, ": ", test1_original_questions[i][answered])
-                test1_answers.append(test1_original_questions[i][answered])
+                test1_answers.append([i, test1_original_questions[i][answered]])
     for k in test1_answers: #puts all the answers into an array, this should get put into a database, guess we could cheese it by keeping it in python but that will get grotty
         print(k)
+    print(len(test1_answers))
     result += "</ol>"
     result += '<h1>Answers Correct: <u>'+str(correct)+'</u></h1>'
-    return result
+    return render_template('Test_1_results.html', c = correct, a = test1_answers)
     
 
 if __name__=='__main__':
