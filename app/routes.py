@@ -50,11 +50,17 @@ def CreateAccount():
 
         if request.form['password'] != request.form['Cpass']:
             error = "Password don't match!"
+            return render_template('CreateAccount.html', error = error)
+
+        elif request.form['fname'] == "" or request.form['lname'] == "" or request.form['email'] == "" or request.form['Cpass'] == "" or request.form['password'] == "":
+            error = "Complete all fields!"
+            return render_template('CreateAccount.html', error = error)
 
         else:
 
             return redirect(url_for('Homepage'))
-    return render_template('CreateAccount.html', error = error)
+
+    return render_template('CreateAccount.html')
 
 @app.route('/Login', methods=['GET', 'POST'])
 def login():
@@ -75,6 +81,13 @@ def login():
 def Module_1():
     return render_template('Module_1.html')
 
+@app.route('/Module_2')
+def Module_2():
+    return render_template('Module_2.html')
+
+@app.route('/Module_3')
+def Module_3():
+    return render_template('Module_3.html')
 
 @app.route('/Test_1', methods=['GET', 'POST'])
 def Test_1():
