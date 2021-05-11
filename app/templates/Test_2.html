@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html id=format_text>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='css/test_style.css')}}">
+<script src="{{url_for('static', filename='java/java.js')}}"></script>
+
+
+<!-- navbar -->
+<div class="navbar">
+    <a href="/">Home</a>
+    <a href="Module_1">Module 1</a>
+    <a href="Module_2">Module 2</a>
+    <a href="Module_3">Module 3</a>
+
+    <a href="Login" style="float: right;">Log In</a>
+    <a href="CreateAccount" style="float: right;">Register</a>
+
+</div>
+
+
+<!-- HEADER, probably gonna be on every page -->
+<div class="bigHead">
+    <h1>  Car Class Conserving and Accident Avoidance 
+        <br/>
+    </h1>
+    
+    
+</div>
+
+<br>
+<body>
+<div class="yup">
+.
+<br/>
+</div>
+
+
+<div class="main">
+    <div class="t_head">
+        Test 2: What to do after the collision
+    </div>
+
+    <br>
+    <div class="title_image">
+        <img src="{{url_for('static', filename='img/inside1.jpg')}}" alt="inside car image">
+
+    </div>
+
+    <div class="test_space" id="test">
+        <form action='/Test_2_Results' method='POST'>
+            <ol>
+                {% for i in q %}
+                    <div class="blue-left div-bg">
+                    <p class="question">{{i}}</p>
+                    {% for j in o[i] %}
+                        <div class="answer"><input type='radio' value="{{j}}" name='{{i}}' />{{j}}<br></div>
+                    {% endfor %}
+                    </div>
+                {% endfor %}
+            </ol>
+            <input class="button" type="submit"/>
+            <input class="button" type="reset"/>
+        </form>
+
+
+        
+
+        <!-- <input type="button" id="btn" value="Ceck!" class="button" onclick="check_marks()"> -->
+        
+    </div>
+
+    <div class="marks" style="display: none;" id="marks">
+        <span id="points"></span>
+        <br>
+        <br>
+        <br>
+        
+        Please enter final marks below
+        <form method="POST">
+            <input type="text" id="final_mark" name="final_mark" value = ""> <br>
+        </form>
+
+       
+        <button class="button", onclick="window.location='Module_1';" >
+            <span>Next Module</span>
+        </button>
+        <button class="button", onclick="window.location='Test_1';" >
+            <span>Try again</span>
+        </button>       
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+
+<!-- Footer -->
+<div class="footer">
+    <p>
+        foooter  - this is only here for style, might add some quick links there later or something
+    </p>
+</div>
+
+</html>
