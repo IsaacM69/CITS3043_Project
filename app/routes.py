@@ -51,21 +51,40 @@ test2_questions = copy.deepcopy(test2_original_questions)
 
 #sets all the questions for test3
 test3_data = {
-    "q1?" : {
-        "1Stop in a safe place, turn on your hazard lights" : "Correct",
-        "E2xit vehicle and divert traffic" : "Incorrect",
-        "Drive off" : "Incorrect"
-    },
-    "What de44tails of the other driver do you not need?" : {
-        "Nam5e" : "Inorrect",
-        "Licgwgwgeense number" : "Incorrect",
-        "Face444book aacount" : "Correct"
+    "What isn't a potential conequence of speeding?" : {
+        "Harming yourself and others" : "Inorrect",
+        "Speeding fines" : "Incorrect",
+        "Demerit points" : "Incorrect",
+        "Saving lives" : "Correct",
+        "Annoying the nighbours" : "Incorrect"
 
     },
-    "Are you32432 obligated to take the first tow truck that arrives on the scene?" : {
-            "Y234es" : "Incorrect",
-            "N2342o" : "Correct",
-    }
+    "What percent of accidents involved distracted drivers in 2016?" : {
+        "13%" : "Inorrect",
+        "16%" : "Correct",
+        "19%" : "Inorrect",
+        "21%" : "Inorrect"
+
+    },
+    "When should you report a car accident to the police?" : {
+            "Occured on any public road" : "Incorrect",
+            "If it resulted in bodily harm" : "Inorrect",
+            "Occured in a carpark" : "Incorrect",
+            "All of the above" : "Correct"
+            
+    },
+    "Who can you not deny tow trucks from?" : {
+        "Insurance" : "Inorrect",
+        "Police" : "Correct",
+        "Roadside" : "Inorrect"
+
+    },
+    "Who should you call if someone is injured in the crash?" : {
+        "Ambulance" : "Correct",
+        "Insurance" : "Incorrect",
+        "Dad" : "Incorrect"
+
+    },
 }
 test3_original_questions = test3_data
 test3_questions = copy.deepcopy(test3_original_questions)
