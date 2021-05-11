@@ -32,14 +32,5 @@ function openTab(evt, tabName) {
     {
         openTab(event, 'tab4')
     }
-    if (e.key == '5')
-    {
-        openTab(event, 'tab5')
-    }
-    if (e.key == '6')
-    {
-        openTab(event, 'tab6')
-
-    }
 
   }

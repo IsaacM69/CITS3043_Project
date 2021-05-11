@@ -182,38 +182,52 @@ h1{
     position: relative;
     transition: 0.5s;
 }
-  
-  .button span:after
-  {
+
+.button span:after
+{
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  
-  .button:hover span {
+}
+
+.button:hover span {
     padding-right: 25px;
-  }
-  
-  .button:hover span:after
-  {
+}
+
+.button:hover span:after
+{
     opacity: 1;
     right: 0;
-  }
+}
 
 
 
-  .marks
-  {
-      text-align: center;
-      font-weight: bold;
+.marks
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding: 2%;
+    background-color: gainsboro;
+    
+}
+
+
+
+
+.result_question
+{
       font-size: large;
-      padding: 2%;
-      background-color: gainsboro;
-      
-  }
+      font-weight: bold;
+}
+.total_mark
+{
+    font-size: x-large;
+    font-weight: bolder;
+}
 /* Footer */
 
 .footer

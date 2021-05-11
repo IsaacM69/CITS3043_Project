@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html id=format_text>
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="{{url_for('static', filename='css/module_style.css')}}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='css/test_style.css')}}">
 <script src="{{url_for('static', filename='java/java.js')}}"></script>
-
 
 
 <!-- navbar -->
@@ -14,7 +14,7 @@
     <a href="Module_3">Module 3</a>
 
     <a href="Login" style="float: right;">Log In</a>
-    <a href="Login" style="float: right;">Register</a>
+    <a href="CreateAccount" style="float: right;">Register</a>
 
 </div>
 
@@ -35,35 +35,45 @@
 <br/>
 </div>
 
-<div class="no">
-    <div class="m1_head">
-        Test 3
+
+<div class="main">
+    <div class="t_head">
+        Test 1: Results
     </div>
 
     <br>
     <div class="title_image">
-        <img src="{{url_for('static', filename='img/final_exam.png')}}" alt="inside car image">
+        <img src="{{url_for('static', filename='img/inside1.jpg')}}" alt="inside car image">
 
     </div>
 
-    <div class="info">
-        <div class="sub_head">
-            Your last test!
-        </div>
-        Pass this next test and you will recieve your certificate of vehicular collision confidence
+    <div class="test_space" id="test">
+        
+            {% for i in a %}
+                <div class="result_question">
+                    {{i[0]}}
+                </div>
+                <div class="result_answer">
+                    {{i[1]}} <br>
 
-
+                </div>
+            {% endfor %}
+            <br><br>
+            <div class="total_mark">
+                Total: {{c}} / 3
+            </div>
     </div>
     <br>
     <br>
+
+    <a href="Module_2" class = "button">Next Module</a>
+    <br>
+    <br>
     <br>
 
 
-    <button class="button", onclick="window.location='Test_3';" >
-        <span>Take the test!</span>
-    </button>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
 </div>
 </body>
 

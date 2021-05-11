@@ -38,17 +38,17 @@
 
 <div class="main">
     <div class="t_head">
-        Test 1: Accident Avoidance
+        Final Exam
     </div>
 
     <br>
     <div class="title_image">
-        <img src="{{url_for('static', filename='img/inside1.jpg')}}" alt="inside car image">
+        <img src="{{url_for('static', filename='img/final_exam.png')}}" alt="final exam image">
 
     </div>
 
     <div class="test_space" id="test">
-        <form action='/Test_1_Results' method='POST'>
+        <form action='/Test_3_Results' method='POST'>
             <ol>
                 {% for i in q %}
                     <div class="blue-left div-bg">
@@ -63,33 +63,9 @@
             <input class="button" type="reset"/>
         </form>
 
-
-        
-
-        <!-- <input type="button" id="btn" value="Ceck!" class="button" onclick="check_marks()"> -->
         
     </div>
 
-    <div class="marks" style="display: none;" id="marks">
-        <span id="points"></span>
-        <br>
-        <br>
-        <br>
-        
-        Please enter final marks below
-        <form method="POST">
-            <input type="text" id="final_mark" name="final_mark" value = ""> <br>
-        </form>
-
-       
-        <button class="button", onclick="window.location='Module_1';" >
-            <span>Next Module</span>
-        </button>
-        <button class="button", onclick="window.location='Test_1';" >
-            <span>Try again</span>
-        </button>       
-
-    </div>
 
     <br>
     <br>
