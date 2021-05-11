@@ -1,4 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
+from app import app, db
+from flask_login import current_user,login_user, logout_user, login_required
+from werkzeug.urls import url_parse
 
 app = Flask(__name__)
 
