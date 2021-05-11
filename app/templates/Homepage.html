@@ -95,7 +95,30 @@
 
     <div id=tab4 class=tab_content>
         <p1>
-            Marks below
+            
+            
+            <div class="courses_content" >
+
+                {% if a1 | length == 0 %}
+                 Please complete test 1 to see marks <br><br>
+                {% else %}
+                  Test 1: {{c1}} /3 <br><br>
+                {% endif %}
+
+                {% if a2 | length == 0 %}
+                 Please complete test 2 to see marks <br><br>
+                {% else %}
+                  Test 2: {{c2}} /3 <br><br>
+                {% endif %}
+
+                {% if a3 | length == 0 %}
+                 Please complete test 3 to see marks <br><br>
+                {% else %}
+                  Test 3: {{c3}} /5 <br><br>
+                {% endif %}
+
+
+            </div>
         </p1>
     </div>
 

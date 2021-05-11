@@ -25,8 +25,8 @@ test1_data = {
 }
 test1_original_questions = test1_data
 test1_questions = copy.deepcopy(test1_original_questions)
-
-
+test1_answers = []
+c1 = 0
 #sets all the questions for test2
 test2_data = {
     "What should you do immediately after a crash?" : {
@@ -47,7 +47,8 @@ test2_data = {
 }
 test2_original_questions = test2_data
 test2_questions = copy.deepcopy(test2_original_questions)
-
+test2_answers = []
+c2 = 0
 
 #sets all the questions for test3
 test3_data = {
@@ -88,6 +89,8 @@ test3_data = {
 }
 test3_original_questions = test3_data
 test3_questions = copy.deepcopy(test3_original_questions)
+test3_answers = []
+c3 = 0
 
 ##prety usless defineitions vv
 def sampling(q, n=2):
@@ -101,9 +104,10 @@ def translate():
 def home():
     return "Sup pussys" 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def Homepage():
-    return render_template('Homepage.html')
+    print(c1)
+    return render_template('Homepage.html', a1 = test1_answers, a2 = test2_answers, a3 = test3_answers, c1 = c1, c2 = c2, c3 = c3)
 
 @app.route('/CreateAccount', methods=['GET', 'POST'])
 def CreateAccount():
@@ -178,6 +182,7 @@ def quiz_answers():
     for k in test1_answers: #puts all the answers into an array, this should get put into a database, guess we could cheese it by keeping it in python but that will get grotty
         print(k)
     print(len(test1_answers))
+    c1 = correct
     result += "</ol>"
     result += '<h1>Answers Correct: <u>'+str(correct)+'</u></h1>'
     return render_template('Test_1_results.html', c = correct, a = test1_answers)
@@ -209,6 +214,7 @@ def quiz2_answers():
     for k in test2_answers: #puts all the answers into an array, this should get put into a database, guess we could cheese it by keeping it in python but that will get grotty
         print(k)
     print(len(test2_answers))
+    c2 = correct
     result += "</ol>"
     result += '<h1>Answers Correct: <u>'+str(correct)+'</u></h1>'
     return render_template('Test_2_results.html', c = correct, a = test2_answers)
@@ -241,6 +247,7 @@ def quiz3_answers():
     for k in test3_answers: #puts all the answers into an array, this should get put into a database, guess we could cheese it by keeping it in python but that will get grotty
         print(k)
     print(len(test3_answers))
+    c3 = correct
     result += "</ol>"
     result += '<h1>Answers Correct: <u>'+str(correct)+'</u></h1>'
     return render_template('Test_3_results.html', c = correct, a = test3_answers)
