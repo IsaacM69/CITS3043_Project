@@ -48,6 +48,28 @@ test2_data = {
 test2_original_questions = test2_data
 test2_questions = copy.deepcopy(test2_original_questions)
 
+
+#sets all the questions for test3
+test3_data = {
+    "q1?" : {
+        "1Stop in a safe place, turn on your hazard lights" : "Correct",
+        "E2xit vehicle and divert traffic" : "Incorrect",
+        "Drive off" : "Incorrect"
+    },
+    "What de44tails of the other driver do you not need?" : {
+        "Nam5e" : "Inorrect",
+        "Licgwgwgeense number" : "Incorrect",
+        "Face444book aacount" : "Correct"
+
+    },
+    "Are you32432 obligated to take the first tow truck that arrives on the scene?" : {
+            "Y234es" : "Incorrect",
+            "N2342o" : "Correct",
+    }
+}
+test3_original_questions = test3_data
+test3_questions = copy.deepcopy(test3_original_questions)
+
 ##prety usless defineitions vv
 def sampling(q, n=2):
     return random.sample(list(q.keys()), n)
@@ -171,6 +193,38 @@ def quiz2_answers():
     result += "</ol>"
     result += '<h1>Answers Correct: <u>'+str(correct)+'</u></h1>'
     return render_template('Test_2_results.html', c = correct, a = test2_answers)
+    
+
+
+@app.route('/Test_3', methods=['GET', 'POST'])
+def Test_3():
+    test3_questions_shuffled = test3_questions
+    return render_template('Test_3.html', q = test3_questions_shuffled, o = test3_questions)
+
+@app.route('/Test_3_Results', methods=['POST'])
+def quiz3_answers():
+    test3_answers = []
+    result = "<ol>"
+    correct = 0
+    for i in test3_questions.keys():
+        if i in request.form:
+            answered = request.form[i]
+            if test3_original_questions[i][answered]:
+                result += "<li><u>{}</u></li>{} <b>{}</b>".format(i, answered, translate()(test3_original_questions[i][answered]))
+                print("question ", i, ": ", test3_original_questions[i][answered])
+                test3_answers.append([i, test3_original_questions[i][answered]])
+                if test3_original_questions[i][answered] == "Correct":
+                    correct +=1
+            else:
+                result += "<li><u>{}</u></li>{} <b>{}</b>".format(i, answered, translate()(test3_original_questions[i][answered]))
+                print("question ", i, ": ", test3_original_questions[i][answered])
+                test3_answers.append([i, test3_original_questions[i][answered]])
+    for k in test3_answers: #puts all the answers into an array, this should get put into a database, guess we could cheese it by keeping it in python but that will get grotty
+        print(k)
+    print(len(test3_answers))
+    result += "</ol>"
+    result += '<h1>Answers Correct: <u>'+str(correct)+'</u></h1>'
+    return render_template('Test_3_results.html', c = correct, a = test3_answers)
     
 
 if __name__=='__main__':

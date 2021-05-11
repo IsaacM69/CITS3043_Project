@@ -38,42 +38,42 @@
 
 <div class="main">
     <div class="t_head">
-        Test 2: Results
+        Final Exam
     </div>
 
     <br>
     <div class="title_image">
-        <img src="{{url_for('static', filename='img/car_accident.jpeg')}}" alt="inside car image">
+        <img src="{{url_for('static', filename='img/final_exam.png')}}" alt="final exam image">
 
     </div>
 
     <div class="test_space" id="test">
+        <form action='/Test_3_Results' method='POST'>
+            <ol>
+                {% for i in q %}
+                    <div class="blue-left div-bg">
+                    <p class="question">{{i}}</p>
+                    {% for j in o[i] %}
+                        <div class="answer"><input type='radio' value="{{j}}" name='{{i}}' />{{j}}<br></div>
+                    {% endfor %}
+                    </div>
+                {% endfor %}
+            </ol>
+            <input class="button" type="submit"/>
+            <input class="button" type="reset"/>
+        </form>
+
         
-            {% for i in a %}
-                <div class="result_question">
-                    {{i[0]}}
-                </div>
-                <div class="result_answer">
-                    {{i[1]}} <br>
-
-                </div>
-            {% endfor %}
-            <br><br>
-            <div class="total_mark">
-                Total: {{c}} / 3
-            </div>
     </div>
-    <br>
-    <br>
 
-    <a href="Module_3" class = "button">Final Test</a>
+
     <br>
     <br>
     <br>
 
 
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 </body>
 
