@@ -4,22 +4,22 @@ from flask_login import UserMixin
 from hashlib import md5
 from app import db
 
-@login.user_loader
-def load_user(id):
-    return User.query.get(int(id))
+##@login.user_loader
+##def load_user(id):
+ ##   return User.query.get(int(id))
 
 
 
 class User(UserMixin,db.Model):
 
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, unique=True)
 
     firstName = db.Column(db.String(64), index=True, unique=False)
     lastName = db.Column(db.String(64), index=True, unique=False)
     email = db.Column(db.String(64), index=True, unique=True)
     password_hash = db.Column(db.String(128))
 
-    Scores = db.relationship('post', backref = 'user',  lazy = 'dynamic')
+    Scores = db.relationship('score', backref = 'user',  lazy = 'dynamic')
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
 
@@ -35,7 +35,7 @@ class User(UserMixin,db.Model):
     def get_first_name(self):
         return self.firstName
 
-class Sores(UserMixin,db.Model):
+class Scores(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key=True)
 
     score_ID = db.Column(db.Integer, db.ForeignKey('user.id')) 

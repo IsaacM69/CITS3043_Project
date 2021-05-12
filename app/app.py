@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
-from app import app, db
+##from app import app, db
 from flask_login import current_user,login_user, logout_user, login_required
 from werkzeug.urls import url_parse
 import random, copy
+##from app.controllers import accountControllers 
 
 app = Flask(__name__)
 
@@ -149,6 +150,8 @@ def login():
 
 @app.route('/Module_1')
 def Module_1():
+    if not current_user.is_authenticated:
+        return redirect(url_for('login'))
     return render_template('Module_1.html')
 
 @app.route('/Module_2')
