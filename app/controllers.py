@@ -40,7 +40,7 @@ def CreateAccount():
       User.Password(form.Password.data)
       User.First_name = form.First_name.data
       User.Last_name = form.Last_name.data
-  ##    db.session.commit()
+      db.session.commit()
       login_user(User, remember=False)
       return redirect(url_for('index'))
     return render_template('register.html', title='Register', form=form)
