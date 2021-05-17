@@ -135,11 +135,13 @@ def Homepage():
 
 @app.route('/CreateAccount', methods=['GET', 'POST'])
 def CreateAccount():
-    form = CreateAccount()
+    ##form = CreateAccount()
 
     if request.method =='POST':
-        newUser = User(id = random.randrange(0, 100000), firstName = form.First_name.data, lastName = form.Last_name.data, email = form.email.data, password_hash = form.email.password)
+        newUser = User(id = random.randrange(0, 100000), firstName = request.form['fname'], lastName = request.form['lname'], email = request.form['email'], password_hash = request.form['password'], 
+        newScore = Scores(id = User.id, score_ID = User.id, Mod_1 = 0, Mod_2 = 0, Mod_3 = 0, finalScore = 0, totalScore = 0))
         db.session.add(newUser)
+        db.session.add(newScore)
         db.session.commit()
         login_user(newUser)
         return render_template('Homepage.html')
