@@ -1,5 +1,8 @@
 
 //i could probably do this in a loop but i have a smooth brain ¯\_(ツ)_/¯
+//checks the marks for each test, actual answers are to be sent to db but this checker is just for 
+//the results tab whilst we get the db working
+
 function check_marks()
 {
     let amount_correct = 0;

@@ -76,7 +76,7 @@ h1{
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: gainsboro;
-    margin-top: 2.5%px;
+    margin-top: 2.5%;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -85,7 +85,7 @@ h1{
 {
 
     background-color: inherit;
-    float: center;
+    /* float: center; */
     border: none;
     outline: none;
     cursor: pointer;
