@@ -104,13 +104,12 @@ def translate():
     return (lambda x: "True" if x else "False")
 
 
-@app.route('/home')
+@app.route('/home', methods=['GET', 'POST'])
 def home():
-    return "Sup pussys" 
+    return render_template('Homepage.html', a1 = test1_answers, a2 = test2_answers, a3 = test3_answers, c1 = c1, c2 = c2, c3 = c3)
 
 @app.route('/', methods=['GET', 'POST'])
 def Homepage():
-    print(c1)
     return render_template('Homepage.html', a1 = test1_answers, a2 = test2_answers, a3 = test3_answers, c1 = c1, c2 = c2, c3 = c3)
 
 @app.route('/CreateAccount', methods=['GET', 'POST'])
@@ -151,7 +150,7 @@ def login():
 @app.route('/Module_1')
 def Module_1():
     if not current_user.is_authenticated:
-        return redirect(url_for('login'))
+        return redirect(url_for('Login'))
     return render_template('Module_1.html')
 
 @app.route('/Module_2')
