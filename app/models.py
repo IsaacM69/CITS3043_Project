@@ -37,7 +37,6 @@ class User(UserMixin,db.Model):
 
 class Scores(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key=True)
-
     score_ID = db.Column(db.Integer, db.ForeignKey('user.id')) 
     Mod_1 = db.Column(db.Integer, index=True, unique=False)
     Mod_2 = db.Column(db.Integer, index=True, unique=False)

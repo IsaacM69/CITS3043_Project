@@ -20,17 +20,26 @@
     <a href="/CreateAccount" style="float: right;">Register</a>
   </div>
 
-<div class="loginHead">
-  <h1>Create Account</h1>
-</div>
-
-<div id=loginform class = "form">
-
-<form  method="POST">
-  {{ form.hidden_tag() }} {{ wtf.form_field(form.First_name) }} {{ wtf.form_field(form.Last_name) }}  {{ wtf.form_field(form.Email) }} {{ wtf.form_field(form.Password) }} {{ wtf.form_field(form.Confirm_Password) }}
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Create Account</button> <br>
-</form>
-<br>
+  <div class="loginHead">
+    <h1>Create Account</h1>
+    </div>
+  <body id = loginform>
+  <form action ="" method="post">
+      <label for="fname">First Name:</label><br>
+      <input type="text" id="fname" name="fname"  value = "{{ request.form.fname }}"><br>
+      <label  for="lname">Last Name:</label><br>
+      <input type="text" id="lname" name="lname"  value = "{{ request.form.lname }}"><br>
+      <label for="email">Email:</label><br>
+      <input type="text" id="email" name="email"  value = "{{ request.form.email }}"><br>
+      
+      <label  for="password">Password:</label><br>
+      <input type="password" id="papasswordss" name="password" value = "{{ request.form.password }}"><br>
+      <label  for="Cpass">Confirm Password:</label><br>
+      <input type="password" id="Cpass" name="Cpass" value = "{{ request.form.Cpass }}"><br>
+      <br>
+      <input type = "submit" value ="Create Account"><br>
+  </form>
+  <br>
 
 {% if error %}
 <p class="Password don't match!"> Error: {{ error }}
