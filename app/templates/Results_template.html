@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html id=format_text>
+<title>CITS3403</title>
 <meta charset="UTF-8">
-<title>CITS3403-PROJECT</title>
-<link rel="stylesheet" href="{{url_for('static', filename='css/module_style.css')}}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="{{url_for('static', filename='css/test_style.css')}}">
 <script src="{{url_for('static', filename='java/java.js')}}"></script>
-
 
 
 <!-- navbar -->
@@ -15,7 +15,7 @@
     <a href="Module_3">Module 3</a>
 
     <a href="Login" style="float: right;">Log In</a>
-    <a href="Login" style="float: right;">Register</a>
+    <a href="CreateAccount" style="float: right;">Register</a>
 
 </div>
 
@@ -36,9 +36,11 @@
 <br/>
 </div>
 
+
+<div class="main">
     {% block content %}
-    {% endblock %}  
-    
+    {% endblock %}
+</div>
 
 <!-- Footer -->
 <div class="footer">
