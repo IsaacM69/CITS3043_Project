@@ -164,8 +164,8 @@ def login():
 
 @app.route('/Module_1')
 def Module_1():
-    if not current_user.is_authenticated:
-        return redirect(url_for('Login'))
+    # if not current_user.is_authenticated:
+    #     return redirect(url_for('Login'))
     return render_template('Module_1.html')
 
 @app.route('/Module_2')

@@ -1,41 +1,5 @@
-<!DOCTYPE html>
-<html id=format_text>
-<title>CITS3403-PROJECT</title>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="{{url_for('static', filename='css/module_style.css')}}">
-<script src="{{url_for('static', filename='java/java.js')}}"></script>
-
-
-
-<!-- navbar -->
-<div class="navbar">
-    <a href="/">Home</a>
-    <a href="Module_1">Module 1</a>
-    <a href="Module_2">Module 2</a>
-    <a href="Module_3">Module 3</a>
-
-    <a href="Login" style="float: right;">Log In</a>
-    <a href="Login" style="float: right;">Register</a>
-
-</div>
-
-
-<!-- HEADER, probably gonna be on every page -->
-<div class="bigHead">
-    <h1>  Car Class Conserving and Accident Avoidance 
-        <br/>
-    </h1>
-    
-    
-</div>
-
-<br>
-<div>
-<div class="yup">
-.
-<br/>
-</div>
-
+{% extends "Module_template.html" %}
+{% block content %}
 <div class="no">
     <div class="m1_head">
         Test 3
@@ -66,13 +30,4 @@
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
-</div>
-
-<!-- Footer -->
-<div class="footer">
-    <p>
-        foooter  - this is only here for style, might add some quick links there later or something
-    </p>
-</div>
-
-</html>
+{% endblock %}
