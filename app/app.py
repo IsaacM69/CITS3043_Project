@@ -1,11 +1,22 @@
 from flask import Flask, render_template, request, redirect, url_for
-##from app import  db
-from flask_login import current_user,login_user, logout_user, login_required
+from flask_login import current_user,login_user, logout_user, login_required, UserMixin
 from werkzeug.urls import url_parse
 import random, copy
+from werkzeug.security import generate_password_hash, check_password_hash
+from hashlib import md5
+from flask_wtf import FlaskForm
+import sqlalchemy
+from wtforms.validators import InputRequired, Email, Length
 ##from app.controllers import accountControllers 
+from config import Config
+from flask_sqlalchemy import SQLAlchemy
+##from flask_migrate import Migrate
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+app.config.from_object(Config)
+db = SQLAlchemy(app)
+##migrate = Migrate(app, db)
 
 
 #sets all the questions for test1
@@ -127,6 +138,9 @@ def CreateAccount():
             return render_template('CreateAccount.html', error = error)
 
         else:
+            newUser = User(id = random.randrange(0, 100000), firstName = request.form['fname'], lastName = request.form['lname'], email = request.form['email'], password_hash = request.form['password'])
+            db.session.add(newUser)
+            db.session.commit()
 
             return redirect(url_for('Homepage'))
 
@@ -257,6 +271,48 @@ def quiz3_answers():
     result += '<h1>Answers Correct: <u>'+str(correct)+'</u></h1>'
     return render_template('Test_3_results.html', c = correct, a = test3_answers)
     
+
+
+
+
+
+class User(UserMixin,db.Model):
+
+    id = db.Column(db.Integer, primary_key=True, unique=True)
+
+    firstName = db.Column(db.String(64), index=True, unique=False)
+    lastName = db.Column(db.String(64), index=True, unique=False)
+    email = db.Column(db.String(64), index=True, unique=True)
+    password_hash = db.Column(db.String(128))
+
+    Scores = db.relationship('score', backref = 'user',  lazy = 'dynamic')
+    def set_password(self, password):
+        self.password_hash = generate_password_hash(password)
+
+    def check_password(self, password):
+        return check_password_hash(self.password_hash, password)
+
+    def __repr__(self):
+        return '<User {}>'.format(self.firstName)
+
+    def get_id(self):
+        return self.id
+
+    def get_first_name(self):
+        return self.firstName
+
+class Scores(UserMixin,db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+
+    score_ID = db.Column(db.Integer, db.ForeignKey('user.id')) 
+    Mod_1 = db.Column(db.Integer, index=True, unique=False)
+    Mod_2 = db.Column(db.Integer, index=True, unique=False)
+    Mod_3 = db.Column(db.Integer, index=True, unique=False)
+    finalScore = db.Column(db.Integer, index=True, unique=False)
+    totalScore = db.Column(db.Integer, index=True, unique=False)
+
+
+
 
 if __name__=='__main__':
     app.run(debug=True)

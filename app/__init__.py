@@ -7,6 +7,5 @@ app = Flask(__name__)
 app.config.from_object(Config)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
-##db.init_app(app)
 
-from app import app, models, controllers
+from app import app, models
