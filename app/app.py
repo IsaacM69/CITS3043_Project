@@ -135,16 +135,21 @@ def Homepage():
 
 @app.route('/CreateAccount', methods=['GET', 'POST'])
 def CreateAccount():
-    ##form = CreateAccount()
 
+    error = None
     if request.method =='POST':
-        newUser = User(id = random.randrange(0, 100000), firstName = request.form['fname'], lastName = request.form['lname'], email = request.form['email'], password_hash = request.form['password'], 
-        newScore = Scores(id = User.id, score_ID = User.id, Mod_1 = 0, Mod_2 = 0, Mod_3 = 0, finalScore = 0, totalScore = 0))
-        db.session.add(newUser)
-        db.session.add(newScore)
-        db.session.commit()
-        login_user(newUser)
-        return render_template('Homepage.html')
+
+        if request.form['password'] != request.form['Cpass']:
+            error = "Password don't match!"
+            return render_template('CreateAccount.html', error = error)
+
+        elif request.form['fname'] == "" or request.form['lname'] == "" or request.form['email'] == "" or request.form['Cpass'] == "" or request.form['password'] == "":
+            error = "Complete all fields!"
+            return render_template('CreateAccount.html', error = error)
+
+        else:
+
+            return redirect(url_for('Homepage'))
 
     return render_template('CreateAccount.html')
 
@@ -153,10 +158,9 @@ def login():
     
     error = None
     if request.method =='POST':
-        user =  User.query.filter_by(id=request.form['email']).first()
-        if user:
-            if request.form['pass'] != user.password_hash:
-                error = "Incorrect password or email"
+
+        if request.form['pass'] != 'bofa' or request.form['email'] != 'garth':
+            error = "Incorrect password or email"
 
         else:
 
