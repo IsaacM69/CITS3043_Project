@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html id=format_text>
   <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITS3043-Project</title>
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <script src="{{url_for('static', filename='java/homepage_script.js')}}"></script>
   </head>
 
-    <div class="navbar">
-      <a href="/">Home</a>
-      <a href="Module_1">Modules</a>
-      <a href="/Login" style="float: right;">Log In</a>
-      <a href="/CreateAccount" style="float: right;">Register</a>
-    
-    </div>
-</div>
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="Module_1">Modules</a>
+    <a href="/Login" style="float: right;">Log In</a>
+    <a href="/CreateAccount" style="float: right;">Register</a>
+  </div>
+
 <div class="loginHead">
   <h1>Create Account</h1>
-  </div>
-<body id = loginform>
-<form action ="" method="post">
+</div>
+
+<div id=loginform>
+
+<form action ="create" method="post">
     <label for="fname">First Name:</label><br>
     <input type="text" id="fname" name="fname"  value = "{{ request.form.fname }}"><br>
     <label  for="lname">Last Name:</label><br>
@@ -38,5 +40,5 @@
 {% if error %}
 <p class="Password don't match!"> Error: {{ error }}
 {% endif %}
-</body>
+</div>
 </html>
