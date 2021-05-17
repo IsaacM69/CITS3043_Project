@@ -3,11 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask_login import current_user,login_user, logout_user, login_required
 from werkzeug.urls import url_parse
 import random, copy
-<<<<<<< HEAD
 ##from app.controllers import accountControllers 
-=======
-# from app.controllers import accountControllers 
->>>>>>> 2dcff7a9307a740bcb2765713d14e35e91468e78
 
 app = Flask(__name__)
 
