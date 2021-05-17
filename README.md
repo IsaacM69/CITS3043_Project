@@ -4,7 +4,7 @@ By Isaac Mauia & Dylan Fellows
 
 To install requirements please:
 cd CITS3043_Project to see the requirements.txt file
-run: pip install -r requirments.txt
+run: pip install -r requirements.txt
 
 To run the website please:
 cd app
