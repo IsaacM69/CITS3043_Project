@@ -1,5 +1,5 @@
 "# CITS3043_Project" 
-By Isaac Mauia & Dylan Fellows
+By Isaac Muia & Dylan Fellows
     22701047   | 22731134
 
 To install requirements please:
