@@ -1,0 +1,571 @@
+commit 02d981c7f607d2f1834fa2fdcfdfa99e4672eb20
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon May 17 17:11:48 2021 +0800
+
+commit 0fbe0ab04254f0e6500877fa4a1677df6db9a03f
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon May 17 17:11:20 2021 +0800
+
+    added readme and requirments
+
+commit a9d02d7aa8d0c06c51fb9b9cf70eb5d285b76f39
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon May 17 16:53:12 2021 +0800
+
+    more jinja
+
+commit 3c86998d7bdebd30665e710656b0703617ab3ac8
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon May 17 16:38:41 2021 +0800
+
+    added jinja
+
+commit 43ba9425ca94ea8e90e7d3a6b33e20abd8ba3b81
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon May 17 16:15:26 2021 +0800
+
+    login method for database
+
+commit 65452a220cf59a696716a0eea47b258ff33b4a9f
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon May 17 15:23:43 2021 +0800
+
+    database almost working
+
+commit 47abf78c84117e54b521a83a67b2c6f830679246
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon May 17 13:37:20 2021 +0800
+
+    deleted module for create account
+
+commit 70ee93ea88806c137aeda61d6b769d19538ccb52
+Merge: fa4944b 2dcff7a
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon May 17 13:35:25 2021 +0800
+
+    Merge branch 'main' of https://github.com/IsaacM69/CITS3043_Project
+
+commit fa4944bca1f697c0f778393d2e01dc7942917db3
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon May 17 13:32:58 2021 +0800
+
+    deleteed modules ofrn login account
+
+commit 2dcff7a9307a740bcb2765713d14e35e91468e78
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon May 17 13:31:20 2021 +0800
+
+    validator pass
+
+commit 63e209cc1f3a58715e666c791c43df50c7bb48b1
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon May 17 13:26:11 2021 +0800
+
+commit ac99a27c4fa3a73f533cc18c66ae591f5ed32250
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon May 17 13:21:02 2021 +0800
+
+    passes validator
+
+commit 8cac15851e7927491fb5a2350cdba93001e13e43
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon May 17 13:08:06 2021 +0800
+
+    passes validator
+
+commit 4405941018092fdeb4fe64336b5adfa0b4f274e5
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Thu May 13 21:31:41 2021 +0800
+
+    commeted out broken imports
+
+commit 7b5f258a9ad404b0224fdbae7435c1a79af769b1
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Wed May 12 10:44:58 2021 +0800
+
+    Controllers for login
+
+commit 51b60af22503cd7446e905ff5fc2cfa8d39afda2
+Merge: 0298faf bb59921
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Tue May 11 17:58:47 2021 +0800
+
+    Merge branch 'main' of https://github.com/IsaacM69/CITS3043_Project
+
+commit 0298faf9576bf3a6abeb557a3298343241a98c52
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Tue May 11 17:53:49 2021 +0800
+
+    some imports
+
+commit bb59921570c969b0e006273833394ac16d1f9f50
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Tue May 11 15:00:58 2021 +0800
+
+commit 735dc47c96788c240e6debc37439163481b5c914
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Tue May 11 14:31:05 2021 +0800
+
+commit 750b020d046648ee38df73ed2f650e7205019620
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Tue May 11 14:09:04 2021 +0800
+
+    Final test added
+
+commit 548701b0dae0e0cd1506ce8904256476d445f8c1
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Tue May 11 13:43:41 2021 +0800
+
+    starting test3
+
+commit 516c6df42bc408652fdcf686f3c8cdb1851730db
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Tue May 11 13:08:34 2021 +0800
+
+    test2 working
+
+commit b3e49e6a70a82fcee30b2c3eebbc7cb8724c493d
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Tue May 11 12:52:50 2021 +0800
+
+    Added module info
+
+commit f26ca2051beeb41e329ca7d926f4605b8452f9ad
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Tue May 11 12:31:18 2021 +0800
+
+    Test1 section complete
+
+commit b50acb42b948e8bfbcff72c22e2c94a62ea4cfe2
+Merge: ee5302e 6018f44
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Tue May 11 11:53:28 2021 +0800
+
+    Merge branch 'main' of https://github.com/IsaacM69/CITS3043_Project into main
+
+commit ee5302eafa43c8f8fc0c9db21d3775eea6539b3c
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Tue May 11 11:53:14 2021 +0800
+
+    added questions to python
+
+commit 6018f44b104c11952c2121fe3085cd6982f3496c
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Thu May 6 19:50:38 2021 +0800
+
+    Css for account stuff
+
+commit fe5384b290918133a67b8c04cee3d03314c9519d
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Thu May 6 19:48:48 2021 +0800
+
+    Css for account stuff
+
+commit 56f7daae724149a64d126bc44f474b09454907f3
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Thu May 6 17:56:31 2021 +0800
+
+    getting key errors sending form info
+
+commit 243eee7c37361fbf7d6cf607540507c03639ee50
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Thu May 6 17:26:05 2021 +0800
+
+commit e52520e7d199af19861148ad459fab8a7b306794
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Thu May 6 16:41:30 2021 +0800
+
+    added checking to tests
+
+commit 471ff16e1632ade57e48511b2f07b50532d6511e
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Wed May 5 19:52:01 2021 +0800
+
+    Updated requirments
+
+commit 627b579513a5e77b9f628b25f534e8a3b344e40e
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Wed May 5 19:49:28 2021 +0800
+
+    Create account passwords must match
+
+commit 8b9e4f19134406005d1e61291d7766cea5a17a5e
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Wed May 5 18:14:15 2021 +0800
+
+    more questions on test
+
+commit 6b7f13a8a07a119d7384209dad9b7fc779dc911a
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Wed May 5 17:56:57 2021 +0800
+
+commit 33de79115c32854f99e90a3b85c885e958cc819f
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Wed May 5 17:55:08 2021 +0800
+
+commit 2f1983a794ae58c315d1a0342a4dd0906e3de9ad
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Wed May 5 17:51:27 2021 +0800
+
+    moved a munch of files into static
+
+commit 07e247f417d296693f1123d88658a9740fb1518c
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Wed May 5 17:40:46 2021 +0800
+
+    css works with python now
+
+commit c44463a4a18004011e8a82e8109e50e7a8656a51
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Wed May 5 17:09:26 2021 +0800
+
+     trying to get css to work in python
+
+commit 6a47810d95d6af5e27e3b14cd30b1b047e3f4d44
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Wed May 5 16:45:27 2021 +0800
+
+commit d7acafff9c04829b39e9880bf19c8ac8c97a0c49
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Wed May 5 16:44:25 2021 +0800
+
+commit a7c3d6f8e0fed2b260e136d9d2e5fe9f0fa65dcf
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Wed May 5 15:26:28 2021 +0800
+
+    moved trmplates
+
+commit 2ef70177683a6d2e01756c2c56a74369d5877aac
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Wed May 5 15:23:45 2021 +0800
+
+    migrations
+
+commit 973dbb590b039b186340964734d15318796940c4
+Merge: 617557a a3793fc
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Wed May 5 15:21:53 2021 +0800
+
+    Merge branch 'main' of https://github.com/IsaacM69/CITS3043_Project
+
+commit 617557a519b8e574317bc2207a78ea65982bd5ae
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Wed May 5 15:21:02 2021 +0800
+
+    migrations
+
+commit a3793fc6b9eaf8736d2aa5aecc9cf0039d3aa9e7
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Wed May 5 14:00:26 2021 +0800
+
+    test q1
+
+commit 197d2e519bdf16b0da4bde026f0ef3bc0d1c1030
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Wed May 5 13:42:38 2021 +0800
+
+    test page improvements
+
+commit 8a5d28792da462cbc5484ef9607d7dab18c87ffb
+Merge: 7566636 8ca8683
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 18:40:14 2021 +0800
+
+    Merge branch 'main' of https://github.com/IsaacM69/CITS3043_Project
+
+commit 75666362901bc9d552f5ff3ab3023be30c62ac65
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 18:40:02 2021 +0800
+
+    module 1 lookin gooood
+
+commit 8ca8683fdac9337801e11b98cc571c68c7c7f12c
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Fri Apr 30 18:30:12 2021 +0800
+
+    deleted website folder
+
+commit 23f63bd96b2323fbe13dcfdfccae0ae8781eef4d
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 18:06:00 2021 +0800
+
+commit 3adbd7fd669926f7ba281492b4608c43d9d733b0
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 17:36:22 2021 +0800
+
+commit afd69484d86c9afe53a61e767156efc9185666d6
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 17:20:43 2021 +0800
+
+commit d2904e0094d13d3ba8907b5b90e05e80f79f8e7d
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 16:53:18 2021 +0800
+
+    deleted account pic and went for text in a navbar
+
+commit 67bc94a1dc652c5fa0f48a4b312b11f881bb624c
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 16:46:57 2021 +0800
+
+    added navbar
+
+commit 1147c2eeb9d9ede768b1c46e97fe03bef7ab5c81
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 16:19:51 2021 +0800
+
+commit 295b8189f6fa692f0831f1e6d855c35536e173b4
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 16:10:40 2021 +0800
+
+commit b4ee8d7c8d85c978a24636b5dedc7e4a77376830
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 15:58:36 2021 +0800
+
+    added module_style
+
+commit c3f870479b8e968d436413eafd6c09e0a2c50445
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 15:56:46 2021 +0800
+
+    added test page
+
+commit e2456f710aed25af0b43830f0fb0b15f3d3e4ee1
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 15:55:03 2021 +0800
+
+    test tab
+
+commit 251199e1ac944076292ce380fe5fa8acf3f4862b
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 15:43:42 2021 +0800
+
+commit 365a966b5766537f08c3cabfbe3de92a9ee95246
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 15:14:00 2021 +0800
+
+    back button added
+
+commit 7e3b9d116f3c9dbf08198473dedfaa00675d191b
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 14:09:22 2021 +0800
+
+    neat
+
+commit c434691cd1c8f9e040ac9a25c82189afdd0aa007
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 14:06:14 2021 +0800
+
+    account button links
+
+commit 1f9a3ed48b9e6265a3dc5d9ea4f8ba07fc37dd6c
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 13:52:27 2021 +0800
+
+    homepage lookin neat
+
+commit 9f1b45640b7c6ce536a4421c0683da3f85a25d00
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 13:23:11 2021 +0800
+
+    button css
+
+commit dbbd5219ccf60ebc36acc4e7cf5fb5ff2fdc41e8
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Fri Apr 30 13:22:53 2021 +0800
+
+    added buttons
+
+commit 700dffbe0fd7a1d06843ff38cff3517704111cfd
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Wed Apr 28 16:38:33 2021 +0800
+
+    Create account jobby
+
+commit 6026f767ff313172bd9b2f26e6bb2b04f79283c2
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Wed Apr 28 11:59:41 2021 +0800
+
+    updates update
+
+commit 620b6b8260395584e3b6642cde7ea00298d8df5c
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Wed Apr 28 11:57:51 2021 +0800
+
+    Basic flask and login
+
+commit eaf76815fa5adbad5f90241e8ac5a8f8160ec3e7
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 22:23:21 2021 +0800
+
+    goin bed now
+
+commit 3fc8fe0ec6976bb064eab1eecee5739d5dc9fe73
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 22:20:03 2021 +0800
+
+commit e9e9d9eac9cdf6088966a69b7363313c1ab2b284
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 22:16:00 2021 +0800
+
+    added js for homepage
+
+commit 3728aaed0cfa9366f69d35911483f33858c9e6da
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 22:12:57 2021 +0800
+
+    added homepage_js
+
+commit 49bc4ba8ec319037870b7ca035d77e72dd29670b
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 22:06:16 2021 +0800
+
+commit 78ea75ebf14953822a14545d9f8c90c55b065adb
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 21:52:26 2021 +0800
+
+    headwork
+
+commit 066b3170664f78f07e9c5ca1c243de0d031bea70
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 21:28:00 2021 +0800
+
+    header goin strong
+
+commit a413194ddcea869e791e407ce6dbf418f675f284
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 21:13:27 2021 +0800
+
+    idk what to put in these messages ay
+
+commit c16d8c537cca8522b3006f93a20ce5e85b58eebd
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 21:04:07 2021 +0800
+
+    janky account button
+
+commit faab77ce3f63ad6061907bd7b018fc52c853d59c
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 20:29:24 2021 +0800
+
+    added title
+
+commit 67fe05589ded6e43f2d0b0172901b91b90385feb
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 13:23:35 2021 +0800
+
+    Skeleton create account
+
+commit 9493d37255c8c5c1f04cb6a2180be3c1f0616b38
+Merge: b35f11d c6027a5
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 13:17:09 2021 +0800
+
+    Merge branch 'main' of https://github.com/IsaacM69/CITS3043_Project
+
+commit b35f11d49143ee241dace7cbec39d95a89e1fa45
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 13:16:54 2021 +0800
+
+    skeleton login form
+
+commit c6027a5f0129a91b42290810c9f75d8dfb215ab6
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 12:55:23 2021 +0800
+
+commit 6298fe03f0a5e10dd7bc829a51d32f6bd7ab7b9c
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 12:51:42 2021 +0800
+
+    base
+
+commit aff8f71b17717c3afbd0a2dfac0d729e67dc1d14
+Merge: 2ace3c2 d91e109
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 12:49:38 2021 +0800
+
+    Merge branch 'main' of https://github.com/IsaacM69/CITS3043_Project
+
+commit d91e109a755636d76096920a2eb58f69d87e62aa
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 12:48:15 2021 +0800
+
+    Pages
+
+commit 2ace3c263050488e594701f4e7d0dc8f82e10325
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 12:44:11 2021 +0800
+
+    updates in here
+
+commit 7af3b5a01991e96f388ebcab1a647d914d2c786a
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 12:42:53 2021 +0800
+
+    Project_start
+
+commit 42b8bba9fe7166a95af008167cc4641b3ee4e8b5
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 12:41:56 2021 +0800
+
+    added some files
+
+commit f7d7751e0725dd591cdfc26b227dbd43910157c9
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 12:39:16 2021 +0800
+
+    ach
+
+commit e8f0a6b54d950761800c7e013b1b69929be9f4f1
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 12:36:43 2021 +0800
+
+    website
+
+commit 7d5367baa5203e2be61aa298c1b060da774a60e3
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 12:34:48 2021 +0800
+
+    fk you
+
+commit daf90768335158e1636c96d61daabea1b31f1a68
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 12:34:16 2021 +0800
+
+    sug
+
+commit dc57dee1fe413eb438394cfa75746cd09a8280e6
+Author: seventyD <dylanfellows990@gmail.com>
+Date:   Mon Apr 26 12:32:15 2021 +0800
+
+    cooom
+
+commit 506cecb4ec099b539923e35786aee45c4ad1174a
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 12:00:08 2021 +0800
+
+    bofa
+
+commit 71d43ab74b73982da09aa4a0a5101be98574c177
+Merge: dbc9b48 8b57f92
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 11:58:34 2021 +0800
+
+    Merge branch 'seventyD-patch-2'
+
+commit 8b57f9217d9095ca48a60db6dfc06b690c0a554c
+Author: seventyD <83196903+seventyD@users.noreply.github.com>
+Date:   Mon Apr 26 11:55:56 2021 +0800
+
+    Update epic_memes.java
+
+commit dbc9b48cb6d8fb925f94a3ff811ad0dbcc4ea882
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 11:53:30 2021 +0800
+
+    test
+
+commit 0f4d6c94ee8f56fe7ce59a5c7d95a5c43eb12a07
+Author: IsaacM69 <22701047@student.uwa.edu.au>
+Date:   Mon Apr 26 11:29:29 2021 +0800
+
+    first commit
