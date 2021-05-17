@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html id=format_text>
   <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>CITS3403-project</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <script src="{{url_for('static', filename='java/homepage_script.js')}}"></script>
   </head>
@@ -12,16 +13,18 @@
       <a href="/CreateAccount" style="float: right;">Register</a>
     
     </div>
+
 <div class="loginHead">
   <h1>Account Login</h1>
 </div>
-<body id = loginform>
-<form action ="" method="post">
+
+<div id = loginform>
+<form action ="home" method="post">
     <label for="email">Email:</label><br>
     <input type="text" id="email" name="email" value = "{{ request.form.email }}"> <br>
 
     <label  for="pass">Password:</label><br>
-    <input type="password" id="pass" name="pass"value = "{{ request.form.pass }}"><br>
+    <input type="password" id="pass" name="pass" value = "{{ request.form.pass }}"><br>
     <input type="checkbox" onclick="myFunction()">Show password<br>
 
     <input type = "submit" value ="Login">
@@ -44,5 +47,5 @@
 <p class="incorrect email or password"> Error: {{ error }}
 {% endif %}
 
-</body>
+</div>
 </html>

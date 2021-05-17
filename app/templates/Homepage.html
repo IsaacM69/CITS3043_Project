@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html id=format_text>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
+    <meta charset="UTF-8">
+    <title>CITS3403-Project</title>
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
     <script src="{{url_for('static', filename='java/homepage_script.js')}}"></script>
 </head>
@@ -36,7 +38,7 @@
 
 
 <!-- Menu system, can always change this  -->
-<body onload="openTab(event, 'tab1')"></body>
+<div onload="openTab(event, 'tab1')"></div>
 <div class="tabs" >
     <button class="tab_links" onclick="openTab(event, 'tab1')">Home</button>
     <button class="tab_links" onclick="openTab(event, 'tab2')">Courses</button>
@@ -45,7 +47,6 @@
 
 
     <div id=tab1 class=tab_content>
-        <p1>
 
             <div class=home_content>
                 <br/>
@@ -55,12 +56,10 @@
                 <br/>
                 please enjoy.
             </div>
-        </p1>
     </div>
 
 
     <div id=tab2 class=tab_content>
-        <p1>
             <div class="courses_content" >
                 <button onclick="window.location.href='Module_1';">
                     Module 1: Accident Avoidance
@@ -73,11 +72,9 @@
                 </button>
                 
             </div>
-        </p1>
     </div>
 
     <div id=tab3 class=tab_content>
-        <p1>
             <div class="courses_content" >
                 <button onclick="window.location.href='Test_1';">
                     Test 1: Simple, dont crash
@@ -90,12 +87,9 @@
                 </button>
 
             </div>
-        </p1>
     </div>
 
-    <div id=tab4 class=tab_content>
-        <p1>
-            
+    <div id=tab4 class=tab_content>            
             
             <div class="courses_content" >
 
@@ -119,10 +113,7 @@
 
 
             </div>
-        </p1>
     </div>
-
-    
 </div>
 <br>
 
