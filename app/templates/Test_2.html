@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html id=format_text>
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>CITS3403-PROJECT</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="{{url_for('static', filename='css/test_style.css')}}">
 <script src="{{url_for('static', filename='java/java.js')}}"></script>
@@ -29,7 +30,7 @@
 </div>
 
 <br>
-<body>
+<div>
 <div class="yup">
 .
 <br/>
@@ -50,6 +51,7 @@
     <div class="test_space" id="test">
         <form action='/Test_2_Results' method='POST'>
             <ol>
+                <li>
                 {% for i in q %}
                     <div class="blue-left div-bg">
                     <p class="question">{{i}}</p>
@@ -58,6 +60,7 @@
                     {% endfor %}
                     </div>
                 {% endfor %}
+                </li>
             </ol>
             <input class="button" type="submit"/>
             <input class="button" type="reset"/>
@@ -82,10 +85,10 @@
         </form>
 
        
-        <button class="button", onclick="window.location='Module_1';" >
+        <button class="button" onclick="window.location='Module_1';" >
             <span>Next Module</span>
         </button>
-        <button class="button", onclick="window.location='Test_1';" >
+        <button class="button" onclick="window.location='Test_1';" >
             <span>Try again</span>
         </button>       
 
@@ -99,7 +102,7 @@
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
-</body>
+</div>
 
 <!-- Footer -->
 <div class="footer">
