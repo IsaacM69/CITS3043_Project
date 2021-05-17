@@ -4,11 +4,11 @@ from werkzeug.urls import url_parse
 import random, copy
 from werkzeug.security import generate_password_hash, check_password_hash
 from hashlib import md5
-from flask_wtf import FlaskForm
 import sqlalchemy
-from wtforms.validators import InputRequired, Email, Length
-##from app.controllers import accountControllers 
+from wtforms.validators import InputRequired, Length, regexp, EqualTo
+from wtforms import  StringField, PasswordField, SubmitField, SelectField
 from config import Config
+from flask_wtf import FlaskForm
 from flask_sqlalchemy import SQLAlchemy
 ##from flask_migrate import Migrate
 
@@ -18,6 +18,16 @@ app.config.from_object(Config)
 db = SQLAlchemy(app)
 ##migrate = Migrate(app, db)
 
+class CreateAccount(FlaskForm):
+  First_name = StringField('First Name', validators=[InputRequired(), Length(max=64)])
+  Last_name = StringField('Last Name', validators=[InputRequired(), Length(max=64)])
+  Email = StringField('Email', validators=[InputRequired(), Length(max=64)])
+  Password = PasswordField('Password',  validators=[InputRequired(), Length(max=64)])
+  Confirm_Password = PasswordField('Confirm Password', validators=[EqualTo('Password'), Length(max=64)])
+
+class LoginForm(FlaskForm):
+  Email = StringField('Email')
+  Password = PasswordField('Password')
 
 #sets all the questions for test1
 test1_data = {
@@ -125,24 +135,14 @@ def Homepage():
 
 @app.route('/CreateAccount', methods=['GET', 'POST'])
 def CreateAccount():
+    form = CreateAccount()
 
-    error = None
     if request.method =='POST':
-
-        if request.form['password'] != request.form['Cpass']:
-            error = "Password don't match!"
-            return render_template('CreateAccount.html', error = error)
-
-        elif request.form['fname'] == "" or request.form['lname'] == "" or request.form['email'] == "" or request.form['Cpass'] == "" or request.form['password'] == "":
-            error = "Complete all fields!"
-            return render_template('CreateAccount.html', error = error)
-
-        else:
-            newUser = User(id = random.randrange(0, 100000), firstName = request.form['fname'], lastName = request.form['lname'], email = request.form['email'], password_hash = request.form['password'])
-            db.session.add(newUser)
-            db.session.commit()
-
-            return redirect(url_for('Homepage'))
+        newUser = User(id = random.randrange(0, 100000), firstName = form.First_name.data, lastName = form.Last_name.data, email = form.email.data, password_hash = form.email.password)
+        db.session.add(newUser)
+        db.session.commit()
+        login_user(newUser)
+        return render_template('Homepage.html')
 
     return render_template('CreateAccount.html')
 
@@ -151,9 +151,10 @@ def login():
     
     error = None
     if request.method =='POST':
-
-        if request.form['pass'] != 'bofa' or request.form['email'] != 'garth':
-            error = "Incorrect password or email"
+        user =  User.query.filter_by(id=request.form['email']).first()
+        if user:
+            if request.form['pass'] != user.password_hash:
+                error = "Incorrect password or email"
 
         else:
 
@@ -310,7 +311,6 @@ class Scores(UserMixin,db.Model):
     Mod_3 = db.Column(db.Integer, index=True, unique=False)
     finalScore = db.Column(db.Integer, index=True, unique=False)
     totalScore = db.Column(db.Integer, index=True, unique=False)
-
 
 
 
